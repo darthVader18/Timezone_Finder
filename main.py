@@ -6,11 +6,12 @@ from timezonefinder import TimezoneFinder
 geolocator = Nominatim(user_agent="geoapiExercises")
 
 # input as a geek
-lad = "Queensland"
-print("Location address:", lad)
+#city_name = "Queensland"
+city_name = input("Enter City name: ")
+print("Location address:", city_name)
 
 # getting Latitude and Longitud
-location = geolocator.geocode(lad)
+location = geolocator.geocode(city_name)
 
 print("Latitude and Longitude of the said address:")
 print((location.latitude, location.longitude))
